@@ -36,3 +36,19 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+const rowColumns = document.getElementById('row-columns')
+
+// console.log(rowColumns)
+
+// console.log(teamMembers)
+
+for (let i = 0; i < teamMembers.length; i ++) {
+
+  let currentElement = teamMembers[i]
+
+  // console.log(currentElement)
+
+  
+  
+}
