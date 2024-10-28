@@ -106,7 +106,7 @@ formElement.addEventListener('submit', function (event){
     img: 'https://picsum.photos/200'
   }
 
-  console.log(newMember)
+  // console.log(newMember)
 
   rowColumns.innerHTML += 
   `
