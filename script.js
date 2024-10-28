@@ -52,13 +52,13 @@ for (let i = 0; i < teamMembers.length; i ++) {
 
   rowColumns.innerHTML += 
   `
-            <div class="col-4">
+            <div class="col-sm-12 col-md-4">
                 <div class="card text-bg-dark mb-3" style="max-width: 540px;">
                     <div class="row g-0">
-                      <div class="col-md-4">
+                      <div class="col-4">
                         <img src="${currentElement.img}" class="img-fluid rounded-start" alt="">
                       </div>
-                      <div class="col-md-8">
+                      <div class="col-8">
                         <div class="card-body">
                           <h5 class="card-title">${currentElement.name}</h5>
                           <p class="card-text">${currentElement.role}</p>
