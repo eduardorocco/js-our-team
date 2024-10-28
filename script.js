@@ -83,21 +83,7 @@ const formEmail = document.getElementById('email')
 
 // console.log(formElement, formName, formRole, formEmail)
 
-//CONST VALUE
-
-const newName = formName.value
-
-const newRole = formRole.value
-
-const newEmail = formEmail.value
-
-
-
-
 formElement.addEventListener('submit', function (event){
-
-
-  
 
   event.preventDefault()
 
@@ -107,6 +93,41 @@ formElement.addEventListener('submit', function (event){
 
   const newEmail = formEmail.value
 
-  console.log(newName, newEmail, newRole)
+  //console.log(newName, newEmail, newRole)
+
+  const newMember = {
+
+    name: newName,
+
+    role: newRole,
+
+    email: newEmail,
+
+    img: 'https://picsum.photos/200'
+  }
+
+  console.log(newMember)
+
+  rowColumns.innerHTML += 
+  `
+            <div class="col-sm-12 col-md-4">
+                <div class="card text-bg-dark mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-4">
+                        <img src="${newMember.img}" class="img-fluid rounded-start" alt="">
+                      </div>
+                      <div class="col-8">
+                        <div class="card-body">
+                          <h5 class="card-title">${newMember.name}</h5>
+                          <p class="card-text">${newMember.role}</p>
+                          <p class="card-text"><small class="text-body-primary">${newMember.email}</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+`
+
+
 
 })
