@@ -47,7 +47,7 @@ for (let i = 0; i < teamMembers.length; i ++) {
 
   let currentElement = teamMembers[i]
 
-  console.log(i, currentElement)
+  //console.log(i, currentElement)
 
 
   rowColumns.innerHTML += 
@@ -70,3 +70,43 @@ for (let i = 0; i < teamMembers.length; i ++) {
             </div>
 `
 }
+
+//CONST
+
+const formElement = document.getElementById('new-member-form')
+
+const formName = document.getElementById('name')
+
+const formRole = document.getElementById('role')
+
+const formEmail = document.getElementById('email')
+
+// console.log(formElement, formName, formRole, formEmail)
+
+//CONST VALUE
+
+const newName = formName.value
+
+const newRole = formRole.value
+
+const newEmail = formEmail.value
+
+
+
+
+formElement.addEventListener('submit', function (event){
+
+
+  
+
+  event.preventDefault()
+
+  const newName = formName.value
+
+  const newRole = formRole.value
+
+  const newEmail = formEmail.value
+
+  console.log(newName, newEmail, newRole)
+
+})
