@@ -85,7 +85,11 @@ const formEmail = document.getElementById('email')
 
 formElement.addEventListener('submit', function (event){
 
+  
+
   event.preventDefault()
+
+  
 
   const newName = formName.value
 
@@ -106,7 +110,9 @@ formElement.addEventListener('submit', function (event){
     img: 'https://picsum.photos/200'
   }
 
-  // console.log(newMember)
+  teamMembers.push(newMember)
+
+  console.log(teamMembers)
 
   rowColumns.innerHTML += 
   `
@@ -128,6 +134,7 @@ formElement.addEventListener('submit', function (event){
             </div>
 `
 
-
-
 })
+
+
+  
